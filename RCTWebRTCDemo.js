@@ -253,7 +253,7 @@ socket.on('connect', function (data) {
             selfViewSrc: stream.toURL()
         });
         container.setState({status: 'ready', info: 'Please enter or create room ID'});
-        join('111');
+
     });
 });
 
@@ -322,6 +322,7 @@ export default class RCTWebRTCDemo extends Component {
 
     componentDidMount() {
         container = this;
+        join('111');
     }
     _press(event) {
         this
